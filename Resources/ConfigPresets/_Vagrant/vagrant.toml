@@ -40,3 +40,9 @@ bug_report = "https://github.com/Trauma-Station/Untitled-Self-Antag-Station/issu
 discord    = "https://discord.traumastation.com"
 github     = "https://github.com/Trauma-Station/Untitled-Self-Antag-Station"
 wiki       = "https://todo.wiki.traumastation.com"
+
+# Disabling mrp stuff
+[trauma]
+skills_enabled = false
+disable_vision_cones = true
+disable_vision_effects = true
