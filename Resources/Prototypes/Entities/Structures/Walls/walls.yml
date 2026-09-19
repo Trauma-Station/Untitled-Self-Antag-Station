@@ -1024,13 +1024,13 @@
         Quantity: 2
   # </Trauma>
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi # USAS/Vagrant? idfk what's the fork id
+    sprite: Structures/Walls/solid.rsi # Vagrant
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: Structures/Walls/solid.rsi # USAS
+    sprite: Structures/Walls/solid.rsi # Vagrant
   - type: RCDDeconstructable
     cost: 6
     delay: 8
