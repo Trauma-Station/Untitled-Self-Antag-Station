@@ -1,0 +1,23 @@
+- type: entity
+  id: LedLightBulb
+  components:
+  - type: LightBulb
+    color: "#e6fff7"
+
+- type: entity
+  id: LightTube
+  components:
+  - type: LightBulb
+    color: "#b0d99a"
+
+- type: entity
+  id: LightTubeOld
+  components:
+  - type: LightBulb
+    color: "#869479"
+
+- type: entity
+  id: LedLightTube
+  components:
+  - type: LightBulb
+    color: "#e6fff7"
