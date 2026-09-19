@@ -121,7 +121,7 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#EEEEFF"
+    color: "#e6fff7" # Vagrant - matrix greenish tint
     lightEnergy: 1
     lightRadius: 8
     lightSoftness: 1
@@ -219,7 +219,7 @@
   description: A light fixture.
   components:
   - type: LightBulb
-    color: "#FFBE7E" # Trauma - was 5000K, now 3300K color temp
+    color: "#b0d99a" # Vagrant - 5000K color temp, matrix greenish tint
     lightEnergy: 0.8
     lightRadius: 10
     lightSoftness: 1
@@ -233,7 +233,7 @@
   description: An aging light fixture.
   components:
   - type: LightBulb
-    color: "#FFDABB" # old fluorescents are yellower-4500K temp
+    color: "#869479" # Vagrant - green for an amazing reason
     lightEnergy: 0.5
     lightRadius: 10
     lightSoftness: 1
@@ -257,7 +257,7 @@
   id: LedLightTube
   components:
   - type: LightBulb
-    color: "#EEEEFF"
+    color: "#e6fff7" # Vagrant - matrix greenish tint
     lightEnergy: 1
     lightRadius: 15
     lightSoftness: 0.9
