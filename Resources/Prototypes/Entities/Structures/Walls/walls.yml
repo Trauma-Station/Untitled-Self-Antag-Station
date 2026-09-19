@@ -642,9 +642,9 @@
     convertTo: WallCosmicCult
   # </Trauma>
   - type: Sprite
-    sprite: _Trauma/Structures/Walls/solid.rsi # Trauma
+    sprite: Structures/Walls/solid.rsi # Vagrant
   - type: Icon
-    sprite: _Trauma/Structures/Walls/solid.rsi # Trauma
+    sprite: Structures/Walls/solid.rsi # Vagrant
     state: rgeneric
   - type: Construction
     graph: Girder
