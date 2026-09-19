@@ -7,3 +7,8 @@
   license: "CC-BY-SA-3.0"
   copyright: "tgstation commit 8abb19545828230d92ba18827feeb42a67a55d49, Wood tiles are new tg tiles, resprited by Meowstushka, modified by Ko4erga (discord)"
   source: "https://github.com/tgstation/tgstation/"
+
+- files: ["wood_chess.png", "wood_parquet.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "resprited by github user @Aaronswoop"
+  source: "https://github.com/RatBite-Station-14/Rat_Bite_Station_14/pull/554"

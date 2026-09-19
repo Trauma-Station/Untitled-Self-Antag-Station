@@ -146,7 +146,7 @@
   copyright: "Created by Samuka-C (github) for space-station-14."
   source: "https://github.com/space-wizards/space-station-14/pull/37068"
 
-- files: ["dark_mono.png", "steel_mono.png", "white_mono.png", "wood.png", "wood_broken.png", "wood_large.png", "wood_tile.png"]
+- files: ["bar.png", "cafeteria.png", "checker_dark.png", "clown.png", "dark.png", "dark_herringbone.png", "dark_mini.png", "dark_mono.png", "dark_offset.png", "dark_pavement.png", "dark_pavement_vertical.png", "hydro.png", "kitchen.png", "laundry.png", "lime.png", "lino.png", "mime.png", "steel.png", "steel_herringbone.png", "steel_herringbone.png", "steel_mono.png", "steel_offset.png", "steel_pavement.png", "steel_pavement_vertical.png", "white.png", "white_herringbone.png", "white_mini.png", "white_mono.png", "white_offset.png", "white_pavement.png", "white_pavement_vertical.png", "wood.png", "wood_broken.png", "wood_large.png", "wood_tile.png"]
   license: "CC0-1.0"
   copyright: "Resprited by github user @Aaronswoop."
-  source: "https://github.com/Eagle-0/SpaciousStation/pull/5"
+  source: "https://github.com/RatBite-Station-14/Rat_Bite_Station_14/pull/554"
