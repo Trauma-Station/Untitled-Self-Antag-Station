@@ -145,3 +145,8 @@
   license: "CC0-1.0"
   copyright: "Created by Samuka-C (github) for space-station-14."
   source: "https://github.com/space-wizards/space-station-14/pull/37068"
+
+- files: ["dark_mono.png", "steel_mono.png", "white_mono.png", "wood.png", "wood_broken.png", "wood_large.png", "wood_tile.png"]
+  license: "CC0-1.0"
+  copyright: "Resprited by github user @Aaronswoop."
+  source: "https://github.com/Eagle-0/SpaciousStation/pull/5"
