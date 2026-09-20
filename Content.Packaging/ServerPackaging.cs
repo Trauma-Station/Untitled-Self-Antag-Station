@@ -104,7 +104,7 @@ public static class ServerPackaging
                 ArgumentList =
                 {
                     "build",
-                    Path.Combine("Content.Trauma.Server", "Content.Trauma.Server.csproj"), // Trauma - Trauma.Server depends on everything
+                    Path.Combine("Content.Vagrant.Server", "Content.Vagrant.Server.csproj"), // Vagrant - Vagrant.Server depends on everything
                     "-c", configuration,
                     "--nologo",
                     "/v:m",
@@ -189,7 +189,7 @@ public static class ServerPackaging
         // Additional assemblies that need to be copied such as EFCore.
         var sourcePath = Path.Combine(contentDir, "bin", "Content.Server");
 
-        var deps = DepsHandler.Load(Path.Combine(sourcePath, "Content.Trauma.Server.deps.json")); // Trauma
+        var deps = DepsHandler.Load(Path.Combine(sourcePath, "Content.Vagrant.Server.deps.json")); // Vagrant
 
         var contentAssemblies = GetContentAssemblyNamesToCopy(deps);
 
@@ -234,7 +234,7 @@ public static class ServerPackaging
     /// </summary>
     public static IEnumerable<string> GetContentAssemblyNamesToCopy(DepsHandler deps, string side)
     {
-        var depsContent = deps.RecursiveGetLibrariesFrom($"Content.Trauma.{side}").SelectMany(GetLibraryNames); // Trauma
+        var depsContent = deps.RecursiveGetLibrariesFrom($"Content.Vagrant.{side}").SelectMany(GetLibraryNames); // Vagrant
         var depsRobust = deps.RecursiveGetLibrariesFrom($"Robust.{side}").SelectMany(GetLibraryNames); // Trauma
 
         var depsContentExclusive = depsContent.Except(depsRobust).ToHashSet();

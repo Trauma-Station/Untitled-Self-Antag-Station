@@ -3,15 +3,14 @@
 // The default category, and a map of category cl name to filename in Resources/Changelog
 const ChangelogsDir = "../../Resources/Changelog/"; // must have trailing /
 // IF YOU ARE A FORK, CHANGE THESE!!!!!!!!!!!!
-const MainCategory = "TRAUMA";
-const MainCategoryPath = "TraumaChangelog.yml";
+const MainCategory = "Vagrant";
+const MainCategoryPath = "VagrantChangelog.yml";
 const CategoryPaths = {
 	[MainCategory]: MainCategoryPath,
+	TRAUMA: "TraumaChangelog.yml",
 	WIZDEN: "Changelog.yml",
     WIZDENADMIN: "Admin.yml",
-    MAPS: "Maps.yml",
     ADMIN: "TraumaAdmin.yml",
-    RULES: "Rules.yml",
 };
 
 // All allowed entry types and the final string to use in the changelog yml

@@ -1,3 +1,3 @@
 @echo off
-dotnet run --project Content.Trauma.Server
+dotnet run --project Content.Vagrant.Server
 pause

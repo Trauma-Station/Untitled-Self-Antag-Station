@@ -26,7 +26,7 @@ DISCORD_SPLIT_LIMIT = 2000
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 TRUNCATION_SUFFIX = " [...]"
 
-CHANGELOG_FILE = "Resources/Changelog/TraumaChangelog.yml"
+CHANGELOG_FILE = "Resources/Changelog/VagrantChangelog.yml"
 
 TYPES_TO_EMOJI = {"Fix": "🐛", "Add": "🆕", "Remove": "❌", "Tweak": "⚒️"}
 

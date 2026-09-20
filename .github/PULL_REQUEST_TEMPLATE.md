@@ -1,4 +1,4 @@
-<!-- Guidelines: https://github.com/Trauma-Station/Trauma-Station/blob/master/CONTRIBUTING.md -->
+<!-- Guidelines: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/blob/master/CONTRIBUTING.md -->
 <!-- NOTE: All code submitted to this repository is ALWAYS licensed under the AGPL-3.0-or-later license.  -->
 ## About the PR
 <!-- What did you change? -->
@@ -17,7 +17,7 @@ Small fixes/refactors are exempt. -->
 
 ## Requirements
 <!-- Confirm the following by placing an X in the brackets without spaces inside (for example: [X] ): -->
-- [ ] I have read and am following the [Contributing Guidelines](https://github.com/Trauma-Station/Trauma-Station/blob/master/CONTRIBUTING.md).
+- [ ] I have read and am following the [Contributing Guidelines](https://github.com/Trauma-Station/Untitled-Self-Antag-Station/blob/master/CONTRIBUTING.md).
 - [ ] I have tested this pull request and written instructions on how to test it
 - [ ] I have added media to this PR or it does not require an in-game showcase.
 <!-- You should understand that not following the above may get your PR closed at a maintainer's discretion -->

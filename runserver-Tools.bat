@@ -1,3 +1,3 @@
 @echo off
-dotnet run --project Content.Trauma.Server --configuration Tools
+dotnet run --project Content.Vagrant.Server --configuration Tools
 pause

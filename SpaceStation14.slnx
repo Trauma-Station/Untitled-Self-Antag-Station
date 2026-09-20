@@ -37,6 +37,12 @@
   <Project Path="Content.Server/Content.Server.csproj" />
   <Project Path="Content.Shared.Database/Content.Shared.Database.csproj" />
   <Project Path="Content.Shared/Content.Shared.csproj" />
+  <!-- <Vagrant> -->
+  <Project Path="Content.Vagrant.Server/Content.Vagrant.Server.csproj" />
+  <Project Path="Content.Vagrant.Shared/Content.Vagrant.Shared.csproj" />
+  <Project Path="Content.Vagrant.Client/Content.Vagrant.Client.csproj" />
+  <Project Path="Content.Vagrant.Common/Content.Vagrant.Common.csproj" />
+  <!-- </Vagrant> -->
   <!-- <Trauma> -->
   <Project Path="Content.Trauma.Server/Content.Trauma.Server.csproj" />
   <Project Path="Content.Trauma.Shared/Content.Trauma.Shared.csproj" />

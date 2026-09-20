@@ -1,4 +1,4 @@
-# Trauma Station contribution guidelines and standards
+# Vagrant Station contribution guidelines and standards
 
 For the basics and anything not listed here, read [SS14's upstream documentation](https://docs.spacestation14.com)
 
@@ -22,21 +22,22 @@ Remember to test your PR again after making changes to it! Not doing so is one o
 
 ### C#
 
-1. All new C# code must go in the `Content.Trauma.*` modules.
-2. Try to only add events to `Content.Trauma.Common`, to allow for deocoupling for upstream's and your logic.
+1. All new C# code must go in the `Content.Vagrant.*` modules.
+2. Try to only add events to `Content.Vagrant.Common`, to allow for deocoupling for upstream's and your logic.
 3. If you absolutely need to use an upstream `Content.Shared` type from `Content.*.Common`, you *may* move it to `Content.Common` without changing its namespace to keep code compatible.
-4. If you are adding new methods, fields, etc. in upstream files make a partial class with the same filename but with `.Trauma.cs`. If it isn't partial already, make it partial with a comment.
-5. Do not add new event handlers to upstream systems, make your own system in `Content.Trauma.*` instead.
+4. If you are adding new methods, fields, etc. in upstream files make a partial class with the same filename but with `.Vagrant.cs`. If it isn't partial already, make it partial with a comment.
+5. Do not add new event handlers to upstream systems, make your own system in `Content.Vagrant.*` instead.
 6. Always use proxy methods when they are available, e.g. `TryComp` instead of `EntityManager.TryGetComponent`. This also means don't depend on `EntityManager` when you are in a `EntitySystem` or a BUI.
 7. If a shared system is abstract, the server/client systems should have Server/Client prefix instead of prefixing the shared system with Shared.
 
 ### Resources
 
-All resources go in a `_Trauma` subdirectory inside the resource's folder, e.g. `Resources/Prototypes/_Trauma` for all YML prototypes.
+All resources go in a `_Vagrant` subdirectory inside the resource's folder, e.g. `Resources/Prototypes/_Vagrant` for all YML prototypes.
 
 ### Partial Prototypes
 
-If you are modifying upstream prototypes, use a partial prototype in `Resources/Prototypes/_Trauma/Partials` instead of directly changing upstream's YML.
+If you are modifying upstream prototypes, use a partial prototype in `Resources/Prototypes/_Vagrant/Partials` instead of directly changing upstream's YML.
+These will take priority over `_Trauma/Partials` if they both modfify the same prototype.
 
 This should always be done except for special cases where it would be too obtuse or using partial prototypes isn't possible.
 
@@ -92,7 +93,7 @@ Sounds played positionally (most ingame objects do this) must be mono. Use ffmpe
 If you need to add elements to an upstream UI, e.g. game bar buttons, try to inject it where possible to keep your code separate from upstream.
 For example, you can add a `public static event Action<MyControl>? OnCreated;` then call `OnCreated?.Invoke(this)` at the end of `MyControl`'s constructor.
 Then in a UI controller, system, etc. add a handler for `MyControl.OnCreated` and add your custom controls as children to it.
-Doing this eliminates the need for upstream code to be dependent on your random systems, or those random systems to have any code in `Trauma.Common`.
+Doing this eliminates the need for upstream code to be dependent on your random systems, or those random systems to have any code in `Vagrant.Common`.
 
 ### Prediction
 
@@ -102,7 +103,7 @@ All code should be in shared unless they have a hard dependency in server/client
 
 ### Tags
 
-Tags you add to `Resources/Prototypes/_Trauma/tags.yml` must be added in alphabetical order, with documentation of how they are used.
+Tags you add to `Resources/Prototypes/_Vagrant/tags.yml` must be added in alphabetical order, with documentation of how they are used.
 For example, if you add a `Katana` tag for a katana sheath' storage whitelist, add `# Used in ClothingBeltKatanaSheath slot whitelist`
 Try to update this documentation if you add a substatial use of a tag.
 
@@ -146,20 +147,19 @@ Instead of copy pasting something in the same file 20 times, use anchors using `
 ## Commenting changes
 
 Changes to upstream files must be commented properly.
-For single line changes use `// Trauma - explanation` or in YML, `# Trauma - explanation`.
-This should basically be a single-line diff explaining what you changed, e.g. `// Trauma - removed Access` would clearly mean the `[Access]` attribute on a class was removed.
-If you are changing a value say what it used to be, and optionally why it was changed. e.g. `attackRate: 1 # Trauma - was 2, nerfed for being op`
-
-For multi-line changes or replacements use the tag-like `// <Trauma>` `// </Trauma>` comment style.
-When removing entire sections of code use `/* Trauma` ... `*/`, assuming there are no multiline comments inside of that code.
+- For single line changes use `// Vagrant - explanation` or in YML, `# Vagrant - explanation`.
+  This should basically be a single-line diff explaining what you changed, e.g. `// Vagrant - removed Access` would clearly mean the `[Access]` attribute on a class was removed.
+  If you are changing a value say what it used to be, and optionally why it was changed. e.g. `attackRate: 1 # Vagrant - was 2, nerfed for being op`
+- For multi-line changes or replacements use the tag-like `// <Vagrant>` `// </Vagrant>` comment style.
+  When removing entire sections of code use `/* Vagrant` ... `*/`, assuming there are no multiline comments inside of that code.
 
 When adding things to a list where the order is not important, e.g. file imports, components in an entity prototype, always put them at the top to minimize the chances of conflicts.
 Examples of this:
 ```cs
-// <Trauma>
+// <Vagrant>
 using Content.Shared.Examine;
 using Robust.Shared.Prototypes;
-// </Trauma>
+// </Vagrant>
 using Content.Shared.Actions; // upstream's imports follow...
 ...
 ```
@@ -170,12 +170,12 @@ using Content.Shared.Actions; // upstream's imports follow...
   id: MobHuman
   name: Urist McHands
   components:
-  # <Trauma>
+  # <Vagrant>
   - type: Mutatable
     ...
   - type: Skinnable
     ...
-  # </Trauma>
+  # </Vagrant>
   - type: ... # upstream's components below
 ```
 
@@ -187,7 +187,7 @@ However, **use partial prototypes instead** for YML to make conflicts **impossib
 
 ## Sprite Changes
 
-If you are respriting anything from upstream you **do not need** to make a new rsi in `_Trauma/`. Just amend the copyright line and keep new states at the top of the list.
+If you are respriting anything from upstream you **do not need** to make a new rsi in `_Vagrant/`. Just amend the copyright line and keep new states at the top of the list.
 This doesn't apply to entirely new sprites, such as icons for a new job.
 
 ## Changelogs

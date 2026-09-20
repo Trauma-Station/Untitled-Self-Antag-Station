@@ -120,7 +120,7 @@ public sealed class ErrorWebhookLogHandler : ILogHandler
     /// <summary>
     /// Prefix to remove from stack trace paths.
     /// </summary>
-    public const string StackTracePrefix = "/home/runner/work/Trauma-Station/Trauma-Station/";
+    public const string StackTracePrefix = "/home/runner/work/Trauma-Station/Untitled-Self-Antag-Station/";
 
     /// <summary>
     /// Ignore errors that contain these strings.

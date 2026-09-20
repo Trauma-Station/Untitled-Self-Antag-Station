@@ -1,0 +1,10 @@
+Name: Vagrantlog
+Order: -3
+Entries:
+- author: deltanedas
+  changes:
+  - type: Remove
+    message: Disabled skills and vision cones.
+  id: 1
+  time: '2026-09-19T23:27:54.0000000+00:00'
+  url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/3
