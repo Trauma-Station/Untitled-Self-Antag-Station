@@ -11,6 +11,12 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
   </ItemGroup>
   <ItemGroup>
+    <!-- Vagrant -->
+    <ProjectReference Include="../Content.Vagrant.Client/Content.Vagrant.Client.csproj" />
+    <ProjectReference Include="../Content.Vagrant.Client/Content.Vagrant.Client.csproj" />
+    <ProjectReference Include="../Content.Vagrant.Server/Content.Vagrant.Server.csproj" />
+    <ProjectReference Include="../Content.Vagrant.Shared/Content.Vagrant.Shared.csproj" />
+    <!-- /Vagrant -->
     <!-- Trauma -->
     <ProjectReference Include="../Content.Common/Content.Common.csproj" />
     <ProjectReference Include="../Content.Goobstation.Client/Content.Goobstation.Client.csproj" />

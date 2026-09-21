@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: gamePreset
+  id: AllAtOnce
+  rules:
+  - !Remove Insurgency
+
+- type: gamePreset
+  id: AllerAtOnce
+  rules:
+  - !Remove Insurgency
+
+- type: gamePreset
+  id: Secret
+  rules:
+  - !Remove Insurgency
