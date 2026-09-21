@@ -14801,3 +14801,92 @@ Entries:
   id: 1615
   time: '2026-09-19T15:03:44.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/4631
+- author: jorjorwell
+  changes:
+  - type: Tweak
+    message: Improved 1984
+  id: 1616
+  time: '2026-09-19T23:24:56.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/4679
+- author: Wizard25671
+  changes:
+  - type: Tweak
+    message: >-
+      Made it so chicks grow up 3.5x faster, They now become an adult in 60s
+      instead of 200s
+  - type: Tweak
+    message: >-
+      Reduced the amount of food needed for hens to lay eggs as well as
+      decreased the time to lay eggs, However they now consume more hunger from
+      laying eggs
+  - type: Tweak
+    message: Decreased the fertilization time for roosters
+  - type: Tweak
+    message: Made chickens live longer
+  - type: Tweak
+    message: Made normal lollypops work for creating Candy Eggs
+  - type: Fix
+    message: >-
+      Fixed chicks, hens and roosters noclipping through railings and doors, Now
+      you can properly contain them
+  - type: Fix
+    message: Fixed stone roosters trying to turn an invalid egg into a coral egg
+  - type: Fix
+    message: Fixed chicken hens never eating food
+  - type: Fix
+    message: Fixed cockatrice rooster's having a limited amount of Hephaestium
+  id: 1617
+  time: '2026-09-20T09:17:48.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/4680
+- author: deltanedas
+  changes:
+  - type: Fix
+    message: Fixed backpack verb giving you free ESP.
+  id: 1618
+  time: '2026-09-20T10:31:50.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/4686
+- author: StarMade
+  changes:
+  - type: Add
+    message: Medborg Omnitool Module
+  id: 1619
+  time: '2026-09-20T17:22:20.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/4624
+- author: Wizard25671
+  changes:
+  - type: Add
+    message: >-
+      Added additional info to the ranching guidebook as well as added the
+      ability to actually see the chart for breeding
+  - type: Add
+    message: >-
+      Added a new cargo order for ranching, Costs 4000 spesos and gives you all
+      the resources you need to setup ranching
+  - type: Tweak
+    message: >-
+      Tweaked ageium to prevent aging all together permanently when you put a
+      total of 5u inside of an animal, You get ageium from ixworth eggs which
+      require feeding tomatoes to a white chicken
+  - type: Tweak
+    message: >-
+      Reduced the happiness required for brown roosters to produce golden eggs
+      from fertilizing eggs, Keep in mind fertilizing an egg does not change the
+      egg and requires putting it into an incubator
+  - type: Tweak
+    message: Chickens now slowly heal all burn damage and a bit of poison damage
+  - type: Fix
+    message: Fixed phoenix egg not properly healing the correct damage types
+  id: 1620
+  time: '2026-09-21T08:23:10.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/4691
+- author: boyofsin
+  changes:
+  - type: Remove
+    message: Chef's Job exclusive CQC from their uplink
+  - type: Tweak
+    message: Capoeira's TC price has been increased from 30 to 60
+  - type: Tweak
+    message: CQC is now available to syndicate agents
+  id: 1621
+  time: '2026-09-21T08:34:53.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/4689

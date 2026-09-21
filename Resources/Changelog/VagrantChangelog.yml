@@ -8,3 +8,19 @@ Entries:
   id: 1
   time: '2026-09-19T23:27:54.0000000+00:00'
   url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/3
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Fuel rods last 10x longer.
+  id: 2
+  time: '2026-09-21T09:22:12.0000000+00:00'
+  url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/6
+- author: deltanedas
+  changes:
+  - type: Remove
+    message: >-
+      Removed Insurgents, the real insurgents were the friends we made along the
+      way.
+  id: 3
+  time: '2026-09-21T10:15:42.0000000+00:00'
+  url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/5

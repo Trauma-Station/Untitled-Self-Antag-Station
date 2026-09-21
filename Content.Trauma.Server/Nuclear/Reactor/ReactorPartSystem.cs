@@ -50,7 +50,7 @@ public sealed partial class ReactorPartSystem : EntitySystem
     /// <summary>
     /// The amount of a property consumed by a reaction
     /// </summary>
-    private readonly float _reactant = 0.01f;
+    private readonly float _reactant = 0.001f; // Vagrant - 1/10th so fuel lasts 10x longer
 
     /// <summary>
     /// The amount of a property resulting from a reaction
