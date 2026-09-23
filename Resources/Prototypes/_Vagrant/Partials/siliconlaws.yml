@@ -48,13 +48,13 @@
 # dv salv lawset
 
 - type: siliconLaw
-  id: Salvager1
+  id: Salvage1
   lawString: law-asimov-1
 
 - type: siliconLaw
-  id: Salvager2
+  id: Salvage2
   lawString: law-asimov-2
 
 - type: siliconLawset
-  id: Salvager
+  id: Salvage
   obeysTo: laws-owner-human
