@@ -8,6 +8,10 @@
 # WallSolid: Window
 # Table: null
 
+#region <Vagrant> - The start of many
+NTDefaultCircuitBoard: AsimovCircuitBoard # 2026-09-23 - new chains for chud AIs
+#endregion </Vagrant>
+
 # <Trauma> - too lazy to port debugoks multi migration thing
 # 2025-10-19
 LockerBlueshieldOfficerFilled: null
