@@ -1,0 +1,60 @@
+
+# dV medi lawset
+- type: siliconLaw
+  id: Medical1
+  lawString: law-asimov-1
+
+- type: siliconLaw
+  id: Medical2
+  lawString: law-asimov-2
+
+- type: siliconLawset
+  id: Medical
+  obeysTo: laws-owner-human
+
+# dv engi lawset
+- type: siliconLaw
+  id: Engineer1
+  lawString: law-asimov-1
+
+- type: siliconLaw
+  id: Engineer2
+  lawString: law-asimov-2
+
+# dv jani lawset
+
+- type: siliconLaw
+  id: Janitor1
+  lawString: law-asimov-1
+
+- type: siliconLaw
+  id: Janitor2
+  lawString: law-asimov-2
+
+# dv clown lawset
+
+- type: siliconLaw
+  id: Clown1
+  lawString: law-asimov-1
+
+- type: siliconLaw
+  id: Clown2
+  lawString: law-asimov-2
+
+- type: siliconLawset
+  id: Clown
+  obeysTo: laws-owner-human
+
+# dv salv lawset
+
+- type: siliconLaw
+  id: Salvager1
+  lawString: law-asimov-1
+
+- type: siliconLaw
+  id: Salvager2
+  lawString: law-asimov-2
+
+- type: siliconLawset
+  id: Salvager
+  obeysTo: laws-owner-human
