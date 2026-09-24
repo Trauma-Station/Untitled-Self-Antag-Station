@@ -29,7 +29,6 @@ public static class ModulePackaging
                 ArgumentList =
                 {
                     "build",
-                    "--no-restore",
                     Path.Combine($"Content.{module}.{side}", $"Content.{module}.{side}.csproj"),
                     "-c", configuration,
                     "--nologo",
