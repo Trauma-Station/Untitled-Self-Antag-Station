@@ -53,3 +53,10 @@ Entries:
   id: 6
   time: '2026-09-23T06:13:49.0000000+00:00'
   url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/8
+- author: SpaceStationDev
+  changes:
+  - type: Tweak
+    message: Renamed Assistants to Passengers
+  id: 7
+  time: '2026-09-25T21:12:44.0000000+00:00'
+  url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/11
