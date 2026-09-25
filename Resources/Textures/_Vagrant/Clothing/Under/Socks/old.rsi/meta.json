@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Made by Github user SpaceStationDev for Space Station 14",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/d1d5c35b4052a15dcc28985d5086a6f711625c90/icons/obj/clothing/shoes.dmi  and modified by Flareguy for Space Station 14 | inhand sprites modified by Github user SpaceStationDev | icon and equipped-FEET made by Github user SpaceStationDev",
     "size": {
         "x": 32,
         "y": 32
@@ -12,6 +12,14 @@
         },
         {
             "name": "equipped-FEET",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
             "directions": 4
         }
     ]

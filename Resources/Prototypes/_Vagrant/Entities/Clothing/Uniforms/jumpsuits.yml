@@ -4,7 +4,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformTiderPants
   name: tider pants
-  description: ...Inexplicably fentanyl scented?
+  description: Smells like piss.
   components:
   - type: Sprite
     sprite: _Vagrant/Clothing/Uniforms/tiderpants.rsi

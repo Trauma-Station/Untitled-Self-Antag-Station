@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: TrashBag
+  components:
+  - type: Clothing
+    sprite: Objects/Specific/Janitorial/trashbag.rsi
+    slots:
+    - BELT
+    - NECK
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+      neck:
+      - state: equipped-NECK
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodTrashHood
+    requiredSlot:
+    - neck
+    slot: head
+
+- type: entity
+  id: TrashBagHolding
+  parent: TrashBagBase

@@ -10,3 +10,34 @@
     sprite: _Vagrant/Clothing/OuterClothing/Misc/barrel.rsi
   - type: Clothing
     sprite: _Vagrant/Clothing/OuterClothing/Misc/barrel.rsi
+  - type: StaticPrice
+    price: 40
+  - type: MultiHandedItem
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 15
+  - type: DamageOnLand
+    ignoreResistances: true
+    damage:
+      types:
+        Blunt: 5 # breaks when thrown
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 2
+            max: 4
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

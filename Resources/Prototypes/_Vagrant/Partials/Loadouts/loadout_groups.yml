@@ -4,6 +4,9 @@
   id: PassengerJumpsuit
   loadouts:
   - TiderPants
+  - DisgustingJumpsuit
+  - PassengerPrisonerJumpsuit
+  - PassengerPrisonerJumpskirt
 
 - type: loadoutGroup
   id: PassengerOuterClothing
@@ -11,7 +14,7 @@
   loadouts:
   - PassengerVagrantCoat
   - PassengerBarrel
-  - !Remove PassengerWintercoat
+  - PassengerJensenCoat
 
 - type: loadoutGroup
   id: PassengerShoes
@@ -19,5 +22,9 @@
   loadouts:
   - PassengerOldSocks
   - PassengerBottleSlippers
-  - !Remove BlackShoes
-  - !Remove WinterBoots
+  - PassengerClothShoes
+
+- type: loadoutGroup
+  id: PassengerNeck
+  loadouts:
+  - PassengerTrashBagNeck

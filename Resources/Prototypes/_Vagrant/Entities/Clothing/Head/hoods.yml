@@ -17,3 +17,21 @@
   - type: HideLayerClothing
     slots:
     - Hair
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodTrashHood
+  categories: [ HideSpawnMenu ]
+  name: trash hood
+  description: Trash bag hood.
+  components:
+  - type: Sprite
+    sprite: _Vagrant/Clothing/Head/Hoods/trashbag.rsi
+  - type: Clothing
+    sprite: _Vagrant/Clothing/Head/Hoods/trashbag.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair

@@ -111,12 +111,10 @@
     back: ClothingBackpackDuffel
 
 # Outerclothing
-# <Vagrant> - orphaned
-#- type: loadout
-#  id: PassengerWintercoat
-#  equipment:
-#    outerClothing: ClothingOuterWinterCoat
-# </Vagrant>
+- type: loadout
+  id: PassengerWintercoat
+  equipment:
+   outerClothing: ClothingOuterWinterCoat
 
 # Shoes
 - type: loadout

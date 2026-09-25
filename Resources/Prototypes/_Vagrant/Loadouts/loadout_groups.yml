@@ -17,6 +17,7 @@
   minLimit: 0
   loadouts:
   - PassengerFace
+  - PassengerBalaclava
 
 - type: loadoutGroup
   id: PassengerGloves
@@ -35,3 +36,6 @@
   - PassengerTinfoil
   - PassengerBeanie
   - PassengerBananaHat
+  - PassengerBandanaSkull
+  - PassengerBandanaRed
+  - PassengerBandanaBlue
