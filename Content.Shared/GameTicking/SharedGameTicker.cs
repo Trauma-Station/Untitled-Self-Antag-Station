@@ -31,11 +31,11 @@ namespace Content.Shared.GameTicking
         // But this is easier, and at least it isn't hardcoded.
         //TODO: Move these, they really belong in StationJobsSystem or a cvar.
 
-        // <Trauma> Sets overflow job to be DClass
-        public static readonly ProtoId<JobPrototype> FallbackOverflowJob = "DClass";
+        // <Vagrant> Sets overflow job to be Passenger
+        public static readonly ProtoId<JobPrototype> FallbackOverflowJob = "Passenger";
 
-        public const string FallbackOverflowJobName = "job-name-d-class";
-        // </Trauma>
+        public const string FallbackOverflowJobName = "job-name-passenger-vagrant";
+        // </Vagrant>
 
 
         // TODO network.
