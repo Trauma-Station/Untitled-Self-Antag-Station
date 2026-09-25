@@ -60,3 +60,12 @@ Entries:
   id: 7
   time: '2026-09-25T21:12:44.0000000+00:00'
   url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/11
+- author: SpaceStationDev
+  changes:
+  - type: Remove
+    message: Removed the D-Class job.
+  - type: Tweak
+    message: Changed the overflow job back to passenger.
+  id: 8
+  time: '2026-09-25T22:29:23.0000000+00:00'
+  url: https://github.com/Trauma-Station/Untitled-Self-Antag-Station/pull/10
