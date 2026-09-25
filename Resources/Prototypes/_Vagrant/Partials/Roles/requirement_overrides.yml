@@ -1,0 +1,47 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: jobRequirementOverride
+  id: Trauma
+  jobs:
+    # Dignitary
+    NanotrasenRepresentative:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+    # Command
+    Captain:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+    Quartermaster:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+    HeadOfPersonnel:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+    ChiefEngineer:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+    ChiefMedicalOfficer:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+    ResearchDirector:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+    HeadOfSecurity:
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
