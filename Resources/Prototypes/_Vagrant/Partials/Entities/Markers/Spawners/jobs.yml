@@ -4,5 +4,5 @@
   id: SpawnPointPassenger
   components:
   - type: SpawnPoint
-    extrajobs:
+    extraJobs:
     - !Remove DClass
