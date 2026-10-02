@@ -1042,6 +1042,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("last_seen_user_name");
 
+                    b.Property<DateTime?>("PrisonSentence")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("prison_sentence");
+
                     b.Property<int>("ServerCurrency")
                         .HasColumnType("integer")
                         .HasColumnName("server_currency");

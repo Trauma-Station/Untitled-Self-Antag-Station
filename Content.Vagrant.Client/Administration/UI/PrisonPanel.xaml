@@ -1,0 +1,21 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<controls:FancyWindow
+    xmlns="https://spacestation14.io"
+    xmlns:controls="using:Content.Client.UserInterface.Controls"
+    Title="Prison Panel"
+    MinSize="410 500">
+    <BoxContainer Orientation="Vertical">
+        <LineEdit Name="PlayerNameLine" MinWidth="100" HorizontalExpand="True" PlaceHolder="{Loc ban-panel-player}" />
+        <BoxContainer Orientation="Horizontal" Margin="2">
+            <LineEdit Name="TimeLine" MaxWidth="150" MinWidth="70" PlaceHolder="0"/>
+            <OptionButton Name="MultiplierOption"/>
+            <controls:Separator Orientation="Vertical"/>
+            <Label Name="ExpiresLabel"/>
+        </BoxContainer>
+        <controls:Separator Orientation="Horizontal"/>
+        <Button Name="SubmitButton" Text="{Loc ban-panel-submit}"/>
+    </BoxContainer>
+</controls:FancyWindow>

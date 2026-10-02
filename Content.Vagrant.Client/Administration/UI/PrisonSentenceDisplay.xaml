@@ -1,0 +1,15 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
+<BoxContainer
+    xmlns="https://spacestation14.io"
+    xmlns:controls="using:Content.Client.UserInterface.Controls"
+    HorizontalExpand="True">
+    <controls:StripeBack Name="Contents" HorizontalExpand="True" MinHeight="64">
+    	<BoxContainer Orientation="Vertical" Align="Center">
+            <Label Text="Prison Sentence expires after" HorizontalExpand="True" Align="Center"/>
+            <Label Name="TimeLabel" Align="Center"/>
+        </BoxContainer>
+    </controls:StripeBack>
+</BoxContainer>

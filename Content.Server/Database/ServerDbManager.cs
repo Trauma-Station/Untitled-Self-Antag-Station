@@ -28,6 +28,10 @@ namespace Content.Server.Database
 {
     public interface IServerDbManager
     {
+        // <Vagrant>
+        Task<DateTime?> GetPrisonSentence(Guid id);
+        Task SetPrisonSentence(Guid id, DateTime? sentence);
+        // </Vagrant>
         // <Trauma>
         #region Patrons
         Task<Guid?> GetLinkingCode(Guid player);

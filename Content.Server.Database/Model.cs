@@ -618,6 +618,9 @@ namespace Content.Server.Database
     public class Player
     {
         public int Id { get; set; }
+        // <Vagrant>
+        public DateTime? PrisonSentence { get; set; } // when a prison sentence is set to expire
+        // </Vagrant>
 
         // Permanent data
         public Guid UserId { get; set; }
