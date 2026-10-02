@@ -186,7 +186,7 @@ public sealed partial class PrisonSentenceSystem : EntitySystem
 
     public async Task Pardon(NetUserId id)
     {
-        SetSentence(id, null);
+        _ = SetSentence(id, null);
     }
 
     public async Task IncreaseSentence(NetUserId id, TimeSpan add)
@@ -196,7 +196,7 @@ public sealed partial class PrisonSentenceSystem : EntitySystem
         if (expiry < now)
             expiry = now;
 
-        SetSentence(id, expiry + add);
+        _ = SetSentence(id, expiry + add);
     }
 
     private bool FindStation(out EntityUid station, out MapId map)

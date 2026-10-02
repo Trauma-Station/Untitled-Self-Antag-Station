@@ -45,7 +45,7 @@ public sealed partial class PrisonSentenceSystem : EntitySystem
         // put it below balance
         var parent = lobby.Balance.Parent;
         var index = lobby.Balance.GetPositionInParent() + 1;
-        parent.AddChild(_display);
+        parent!.AddChild(_display);
         _display.SetPositionInParent(index);
     }
 
