@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: MobObserver
+  components:
+  - type: PrisonGhost # prevents observers etc taking ghost roles if they have a prison sentence
