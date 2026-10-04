@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: GaussgunBearing
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Ballistic: 30 # slow firerate + battery AND ammo req = dmg bump to stay competitive with other armory picks
+
+- type: entity
+  id: GaussgunShardSpread
+  components:
+  - type: ProjectileSpread
+    count: 10
+    spread: 25
+
+- type: entity
+  id: GaussgunShard
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Ballistic: 4
+      armorPenetration: -10
+
+- type: entity
+  id: GaussgunDisk
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Ballistic: 10
+        Slash: 5
+      armorPenetration: 0.1
