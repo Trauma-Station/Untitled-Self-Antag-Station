@@ -9,9 +9,9 @@
         Ballistic: 30 # slow firerate + battery AND ammo req = dmg bump to stay competitive with other armory picks
       armorPenetration: -0.25 # no free lunches though, it's a ball bearing not an actual round
 
-# just in case it needs tweaking later
-#- type: entity
-#  id: GaussgunShardSpread
+- type: entity
+  parent: GaussgunShard
+  id: GaussgunShardSpread
 #  components:
 #  - type: ProjectileSpread
 #    count: 10
@@ -24,7 +24,6 @@
     damage:
       types:
         Ballistic: 6 # >shouldn't this be 7.5 to be inline with 12 buck? no, it's fragments from a ball bearing not an actual round, so it's weaker
-      armorPenetration: -1.0
 
 - type: entity
   id: GaussgunDisk
