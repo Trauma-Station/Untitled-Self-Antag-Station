@@ -7,13 +7,15 @@
     damage:
       types:
         Ballistic: 30 # slow firerate + battery AND ammo req = dmg bump to stay competitive with other armory picks
+      armorPenetration: -0.25 # no free lunches though, it's a ball bearing not an actual round
 
-- type: entity
-  id: GaussgunShardSpread
-  components:
-  - type: ProjectileSpread
-    count: 10
-    spread: 25
+# just in case it needs tweaking later
+#- type: entity
+#  id: GaussgunShardSpread
+#  components:
+#  - type: ProjectileSpread
+#    count: 10
+#    spread: 25
 
 - type: entity
   id: GaussgunShard
@@ -21,8 +23,8 @@
   - type: Projectile
     damage:
       types:
-        Ballistic: 4
-      armorPenetration: -10
+        Ballistic: 6 # >shouldn't this be 7.5 to be inline with 12 buck? no, it's fragments from a ball bearing not an actual round, so it's weaker
+      armorPenetration: -1.0
 
 - type: entity
   id: GaussgunDisk
@@ -30,6 +32,6 @@
   - type: Projectile
     damage:
       types:
-        Ballistic: 10
-        Slash: 5
-      armorPenetration: 0.1
+        Ballistic: 15 # i can't be assed to bullshit a reason for this
+        Slash: 10 # it does less damage crits in 4 and has partial AP
+      armorPenetration: 0.25 # just work with me here i do all of these late as fuck at night
