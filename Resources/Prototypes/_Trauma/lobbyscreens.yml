@@ -1,37 +1,37 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: lobbyBackground
-  id: hereticLobbyArt
-  background: /Textures/_Trauma/LobbyScreens/hereticLobbyArt.webp
-  title: lobby-state-background-the-heretic
+  id: punpunCrucifyArt
+  background: /Textures/_Vagrant/LobbyScreens/crucifyHIM.webp
+  title: lobby-state-background-crucify-him
   artist: asardonicsailor
 
 - type: lobbyBackground
-  id: changelingLobbyArt
-  background: /Textures/_Trauma/LobbyScreens/changeling_lobby_art.webp
-  title: lobby-state-background-the-changeling
+  id: yuckyArt
+  background: /Textures/_Vagrant/LobbyScreens/yucky.webp
+  title: lobby-state-background-yucky-moth
   artist: asardonicsailor
 
 - type: lobbyBackground
-  id: hereticLobbyArt2
-  background: /Textures/_Trauma/LobbyScreens/heretic_lobby_art2.webp
-  title: lobby-state-background-the-mansus
+  id: tiderArt
+  background: /Textures/_Vagrant/LobbyScreens/2121.webp
+  title: lobby-state-background-tider-hos
   artist: asardonicsailor
 
 - type: lobbyBackground
-  id: revLobbyArt
-  background: /Textures/_Trauma/LobbyScreens/rev_lobby_art.webp
-  title: lobby-state-background-the-revolution
+  id: liveleakArt
+  background: /Textures/_Vagrant/LobbyScreens/joel1.webp
+  title: lobby-state-background-clown-liveleak
   artist: asardonicsailor
 
 - type: lobbyBackground
-  id: syndicateLobbyArt
-  background: /Textures/_Trauma/LobbyScreens/syndicate_lobby_art.webp
-  title: lobby-state-background-the-syndicate
+  id: goldscarArt
+  background: /Textures/_Vagrant/LobbyScreens/joel2.webp
+  title: lobby-state-background-gold-scar
   artist: asardonicsailor
 
 - type: lobbyBackground
-  id: mugshotLobbyArt
-  background: /Textures/_Trauma/LobbyScreens/mugshotLobbyArt.webp
-  title: lobby-state-background-the-mugshot
-  artist: Hexanova
+  id: gorlexmukbangArt
+  background: /Textures/_Vagrant/LobbyScreens/joel3.webp
+  title: lobby-state-background-gorlex-muckbang
+  artist: asardonicsailor
