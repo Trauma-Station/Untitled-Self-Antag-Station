@@ -1,0 +1,37 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: BulletMagnum
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45 # parity
+
+- type: entity
+  id: BulletMagnumIncendiary
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 15 #parity
+        Heat: 15 #parity
+
+- type: entity
+  id: BulletMagnumAP
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40 # parity
+      armorPenetration: 1 # back to full AP actually this is the one thing it exists for
+
+- type: entity
+  id: BulletMagnumUranium
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 3 # parity
+        Piercing: 32 # parity
+      armorPenetration: 0.65 # so this was .35 AP but the uraniums are .5 base instead of .2 so an extra .15 AP is added to make it .65 AP total

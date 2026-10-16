@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: ClothingHeadHelmetArmoredBase
+  components:
+  - type: Armor
+    modifiers:
+      !Remove flatReductions: # no need for flatreductions when you can just partial -AP onto the offending ammos
