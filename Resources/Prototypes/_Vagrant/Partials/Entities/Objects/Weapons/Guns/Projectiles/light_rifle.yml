@@ -10,6 +10,15 @@
       armorPenetration: 0.4 # break glass (revert to 0.2) if L6 becomes meta again
 
 - type: entity
+  id: BulletLightRifleIncendiary
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 8 # parity
+        Heat: 8 # parity
+
+- type: entity
   id: BulletLightRifleUranium
   components:
   - type: Projectile
