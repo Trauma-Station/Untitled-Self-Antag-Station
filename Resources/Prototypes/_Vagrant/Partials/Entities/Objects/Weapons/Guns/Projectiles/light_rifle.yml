@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: BulletLightRifle
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30 #rb parity
+      armorPenetration: 0.4 # break glass (revert to 0.2) if L6 becomes meta again
+
+- type: entity
+  id: BulletLightRifleUranium
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 3
+        Piercing: 22
+      armorPenetration: 0.6 # Uranium ammo rework - buffed from 0.4 to 0.6 to make it pen more than base
