@@ -19,15 +19,12 @@
       !Remove flatReductions: # no need for flatreductions when you can just partial -AP onto the offending ammos
 
 - type: entity
-  parent: [ BaseSecurityBartenderContraband, ClothingOuterArmorBasic ]
   id: ClothingOuterArmorBasicSlim
   name: soft armor vest
   description: A slim Type III-A soft armored vest that provides decent protection against most melee weapons and calibers.
 
 - type: entity
-  parent: ClothingOuterArmorBasic
   id: ClothingOuterArmorBulletproof
-  name: bulletproof vest
   description: A Type IV heavy bulletproof vest that excels in protecting the wearer against traditional projectile weaponry, and also explosives to a minor extent.
   components:
   - type: Armor
