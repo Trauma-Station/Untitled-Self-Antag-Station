@@ -12,10 +12,6 @@
 - type: entity
   parent: GaussgunShard
   id: GaussgunShardSpread
-#  components:
-#  - type: ProjectileSpread
-#    count: 10
-#    spread: 25
 
 - type: entity
   id: GaussgunShard

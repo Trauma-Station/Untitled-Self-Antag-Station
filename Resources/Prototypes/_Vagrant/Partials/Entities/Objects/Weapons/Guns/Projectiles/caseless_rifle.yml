@@ -6,4 +6,4 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40 #rb parity
+        Ballistic: 40 #rb parity

@@ -6,7 +6,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 25 # parity
+        Ballistic: 25 # parity
       armorPenetration: 0.10 # parity
 
 - type: entity
@@ -25,5 +25,5 @@
     damage:
       types:
         Radiation: 1 # parity
-        Piercing: 19 # parity
+        Ballistic: 19 # parity
       armorPenetration: 0.5 # Uranium ammo rework
