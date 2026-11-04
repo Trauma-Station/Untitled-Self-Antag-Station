@@ -13,7 +13,6 @@ using Content.Shared.Inventory;
 using Content.Shared.FixedPoint;
 using Content.Shared.Random.Helpers;
 using Robust.Shared.Containers;
-using Robust.Shared.Random;
 using System.Linq;
 
 namespace Content.Medical.Shared.Traumas;
@@ -60,7 +59,7 @@ public partial class TraumaSystem
         // Overflow is only used when we are capping the wound, so we use it over the computed delta
         // which will be useless in this specific scenario.
         var delta = args.Overflow ?? args.NewSeverity - args.OldSeverity;
-        if (delta <= 0 || args.NewSeverity < wound.Comp.SeverityThreshold)
+        if (delta < wound.Comp.SeverityThreshold)
             return;
 
         var woundable = Comp<WoundableComponent>(part);
@@ -127,6 +126,7 @@ public partial class TraumaSystem
         bool showAll = true)
     {
         var boneBroken = showAll && _boneQuery.TryComp(part, out var bone) && bone.BoneSeverity == BoneSeverity.Broken;
+
         foreach (var trauma in GetAllWoundTraumas(wound))
         {
             if (traumaType != null && trauma.Comp.TraumaType != traumaType)
@@ -339,12 +339,15 @@ public partial class TraumaSystem
         if (deduction == 1)
             return false;
 
+        multiplier *= _boneTraumaChanceMultipliers[target.Comp.WoundableSeverity];
+        if (multiplier <= 0f)
+            return false;
+
         // We do complete random to get the chance for trauma to happen,
         // We combine multiple parameters and do some math, to get the chance.
         // Even if we get 0.1 damage there's still a chance for injury to be applied, but with the extremely low chance.
         // The more damage, the bigger is the chance.
         var chance = (target.Comp.IntegrityCap / (target.Comp.Integrity + bone.BoneIntegrity)
-             * _boneTraumaChanceMultipliers[target.Comp.WoundableSeverity]
              - deduction + woundInflicter.Comp.TraumasChances[TraumaType.BoneDamage]).Float() * multiplier;
         chance = Math.Clamp(chance, 0f, 1f);
         return SharedRandomExtensions.PredictedProb(_timing, (float) chance, GetNetEntity(target), GetNetEntity(woundInflicter));
@@ -381,10 +384,12 @@ public partial class TraumaSystem
 
         if (deduction == 1)
             return false;
+
+        multiplier *= _organTraumaChanceMultipliers[target.Comp.WoundableSeverity];
+
         // organ damage is like, very deadly, but not yet
         // so like, like, yeah, we don't want a disabler to induce some EVIL ASS organ damage with a 0,000001% chance and ruin your round
         // Very unlikely to happen if your woundables are in a good condition
-
         var chance = (target.Comp.Integrity / target.Comp.IntegrityCap / totalIntegrity -
             deduction + woundInflicter.Comp.TraumasChances[TraumaType.OrganDamage]).Float() * multiplier;
         chance = Math.Clamp(chance, 0f, 1f);
@@ -551,10 +556,13 @@ public partial class TraumaSystem
                 case TraumaType.OrganDamage:
                     var traumaEnt = AddTrauma(targetChosen.Value, target, inflicter, TraumaType.OrganDamage, severity);
 
+                    // Organs have small amount of integrity, compensate it by dividing by 3
+                    var organSeverity = severity / 3;
+
                     if (traumaEnt != EntityUid.Invalid
-                        && !TryChangeOrganDamageModifier(targetChosen.Value, severity, traumaEnt, "WoundableDamage"))
+                        && !TryChangeOrganDamageModifier(targetChosen.Value, organSeverity, traumaEnt, "WoundableDamage"))
                     {
-                        TryCreateOrganDamageModifier(targetChosen.Value, severity, traumaEnt, "WoundableDamage");
+                        TryCreateOrganDamageModifier(targetChosen.Value, organSeverity, traumaEnt, "WoundableDamage");
                     }
 
                     break;
