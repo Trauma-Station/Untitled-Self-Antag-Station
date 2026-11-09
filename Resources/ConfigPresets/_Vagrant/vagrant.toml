@@ -14,6 +14,7 @@ barks_enabled = true
 
 [shuttle]
 cooldown = 5
+auto_call_time = 60 # shorter rounds
 
 [net]
 pvs_enter_budget = 300 # 200 by default

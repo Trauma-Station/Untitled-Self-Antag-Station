@@ -3,11 +3,15 @@
 - type: gamePreset
   id: AllAtOnce
   rules:
+  - !Remove BlobGameMode
+  - !Remove Revolutionary
   - !Remove Insurgency
 
 - type: gamePreset
   id: AllerAtOnce
   rules:
+  - !Remove BlobGameMode
+  - !Remove Revolutionary
   - !Remove Insurgency
 
 - type: gamePreset
