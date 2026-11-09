@@ -16475,3 +16475,89 @@ Entries:
   id: 1778
   time: '2026-11-04T13:37:06.0000000+00:00'
   url: https://github.com/Trauma-Station/Trauma-Station/pull/5272
+- author: elNarehate
+  changes:
+  - type: Tweak
+    message: Sci can make flashes again, for shadow anomalies.
+  - type: Fix
+    message: Roboticist Envirogloves are now insulated
+  id: 1779
+  time: '2026-11-04T19:55:57.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5265
+- author: yglop
+  changes:
+  - type: Tweak
+    message: Holy melons will protect you from magic.
+  id: 1780
+  time: '2026-11-05T11:58:37.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5192
+- author: Giltsmith
+  changes:
+  - type: Tweak
+    message: Nerfed holoparasite variant damages.
+  id: 1781
+  time: '2026-11-05T12:05:20.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5288
+- author: deltanedas
+  changes:
+  - type: Add
+    message: Circuits now support decimal numbers, not just integers.
+  - type: Add
+    message: Added trig functions and exponent gates for circuits.
+  - type: Tweak
+    message: The circuit editor now places new gates relative to your scroll position.
+  id: 1782
+  time: '2026-11-05T15:09:05.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5289
+- author: Endothermix
+  changes:
+  - type: Fix
+    message: Laser Pistols now have the correct melee damage
+  id: 1783
+  time: '2026-11-05T21:29:08.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5294
+- author: elNarehate
+  changes:
+  - type: Fix
+    message: Blood vials and mosins no longer give NTR points.
+  - type: Fix
+    message: >-
+      Fixed low-quality scrap armor increasing the damage you received from
+      explosions.
+  - type: Fix
+    message: Surplus can no longer be discounted.
+  id: 1784
+  time: '2026-11-06T22:17:34.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5304
+- author: LordZirconium
+  changes:
+  - type: Remove
+    message: Removed IFF computers from spacepol shuttles.
+  id: 1785
+  time: '2026-11-07T08:34:30.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5291
+- author: Wizard25671
+  changes:
+  - type: Tweak
+    message: Removed abductor's teleport being canceled from damage/moving
+  - type: Tweak
+    message: Halved the prices on the Abductor Biofabricator
+  id: 1786
+  time: '2026-11-07T11:21:06.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5315
+- author: deltanedas
+  changes:
+  - type: Tweak
+    message: Fuel rods now glow when hot like forged metals do.
+  - type: Fix
+    message: Fixed fuel rods heat exchanging with open air being inaccurate.
+  id: 1787
+  time: '2026-11-08T15:50:24.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5313
+- author: NoElkaTheGod
+  changes:
+  - type: Tweak
+    message: Revolutionaries now require 30 players to roll, up from 20
+  id: 1788
+  time: '2026-11-09T14:18:09.0000000+00:00'
+  url: https://github.com/Trauma-Station/Trauma-Station/pull/5326
