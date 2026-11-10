@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: ClothingHeadHelmetScrap
+  name: scrap helmet
+  description: A helmet made by welding steel over a bucket, and affixing cables as a chinstrap. Viva Tidonia!
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55 # nerfs? on MY self antag armor? more likely than you think.
+        Slash: 0.25 # see scrap armor
+        Piercing: 0.4
+        Ballistic: 0.55

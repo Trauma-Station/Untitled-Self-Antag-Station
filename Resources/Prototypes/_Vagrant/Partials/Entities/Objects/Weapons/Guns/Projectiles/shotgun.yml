@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: PelletShotgunSlug
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Ballistic: 60 # high risk high reward vs buck
+      armorPenetration: 0.25 # slug better at penning armor
+
+- type: entity
+  id: PelletShotgun
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Ballistic: 5 # 5x15 = 75 + bleed = just fucking mulch a tider
+      armorPenetration: -0.5 # buck is shit at penning armor
+
+- type: entity
+  id: PelletShotgunUranium
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 1.5 # some extra lingering dmg with your adv. buck shell, seccie?
+        Ballistic: 6 # 7.5x10 it's 75 again but it's more accurate and does lingering damage, get to mulching seccie :)
+
+- type: entity
+  id: PelletShotgunUraniumSpread
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunUranium
+    spread: 6 # back to tight spread

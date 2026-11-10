@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: ClothingOuterArmorScrap
+  name: scrap armor
+  description: An entire stack of steel welded together into something resembling armor. Good against slashing and piercing by way of how much steel was used to make it. Viva Tidonia!
+  components:
+  - type: Armor
+    coverage: # sprites make it look like it covers legs and arms, from the front
+    - Torso
+    - Arm
+    - Leg
+    modifiers:
+      coefficients:
+        Blunt: 0.6 # shitty welds and also the historical weakness of plate armor
+        Slash: 0.3 # you're wearing an entire STACK of steel welded into armor, it can have *some* good resistances
+        Piercing: 0.45
+        Ballistic: 0.6 # see above for reasoning
+  - type: StaminaResistance
+    damageCoefficient: -0.5 # heavy ass armor is tiring to wear
+  - !Remove type: HideClothingLayerClothing

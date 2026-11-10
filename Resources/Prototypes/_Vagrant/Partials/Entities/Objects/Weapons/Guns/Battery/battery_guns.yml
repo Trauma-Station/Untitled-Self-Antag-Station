@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# so much rebalance slop, it's a crime...
+- type: entity
+  id: WeaponLaserSidearm
+  components:
+  - type: Gun # >shouldn't it be 5 for mk-58 parity?
+    fireRate: 3.5 # no, this has stuns on it therefore Evil Half Buff.
+
+- type: entity
+  id: WeaponLaserGunAssault
+  components:
+  - type: Gun
+    burstCooldown: 0.5 # 1s CD is slopppp

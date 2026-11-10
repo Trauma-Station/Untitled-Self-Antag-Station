@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: LaserSidearmBullet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 20 # RB mk58 parity, slower firerate close enough DPS plus utility because disabler rounds
+
+- type: entity
+  id: LaserCarbineBullet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 10 # 6 -> 10, carbine GENUINELY tickles otherwise and 30/burst isn't that bad when you consider other guns :)
+
+- type: entity
+  id: LaserGunBullet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 25 # just fuckin' kill em

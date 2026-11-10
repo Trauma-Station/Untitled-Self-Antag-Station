@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  id: BulletPistol
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Ballistic: 20 # parity
+
+- type: entity
+  id: BulletPistolIncendiary
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 5 # parity
+        Heat: 5 # parity
+
+- type: entity
+  id: BulletPistolUranium
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 2 # parity
+        Ballistic: 14 # parity
+      armorPenetration: 0.5 # uranium pen armor good good yes
